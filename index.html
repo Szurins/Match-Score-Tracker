@@ -1,45 +1,41 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Match tracker</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sport Selector</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <h1>MatchScore</h1>
+            <nav>
+                <a href="index.html">Sports</a>
+                <a href="scores.html">Live Scores</a>
+                <a href="details.html">Details</a>
+            </nav>
+        </header>
 
-<header>
-<h1>NBA Matches</h1>
-<hr>
-<nav>
-    <a href="#">NBA</a>
-    <a href="#">Football</a>
-    <a href="#">Handball</a>
-</nav>
-</header>
+        <main>
+            <h2>Select a Sport</h2>
+            <div class="sport-grid">
+                <a href="scores.html" class="sport-btn">FOOTBALL</a>
+                <a href="scores.html" class="sport-btn">AFL</a>
+                <a href="scores.html" class="sport-btn">BASEBALL</a>
+                <a href="scores.html" class="sport-btn">BASKETBALL</a>
+                <a href="scores.html" class="sport-btn">FORMULA-1</a>
+                <a href="scores.html" class="sport-btn">HANDBALL</a>
+                <a href="scores.html" class="sport-btn">HOCKEY</a>
+                <a href="scores.html" class="sport-btn">MMA</a>
+                <a href="scores.html" class="sport-btn">NBA</a>
+                <a href="scores.html" class="sport-btn">NFL</a>
+                <a href="scores.html" class="sport-btn">RUGBY</a>
+                <a href="scores.html" class="sport-btn">VOLLEYBALL</a>
+            </div>
+        </main>
 
-<main>
-<section class="lewy">
-    mecze w tej chwili mieszane mozna zrobic tak ze klikniecie 
-    meczu tutaj pokaze go z prawej strony.
-    <ol>
-        <li></li>
-        <li></li>
-    </ol>
-</section>
-<section class="srodek">
-    uzycie 3 przyciskow z gory pokazuje wszystkie mecze z danej kategori
-</section>
-<section class="prawy">
-    mecz ktory wybierzemy szczegoly z niego ? dokladne moze tak 
-</section>
-</main>
-
-<footer>
-2026. Match Tracker. pr
-</footer>
-
-<script src="./api.js"></script>
-
-</body>
+        <footer>&copy; MatchScore</footer>
+    </body>
+    <script src="api.js"></script>
 </html>
