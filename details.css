@@ -1,0 +1,58 @@
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--secondary-brown);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.detail-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sport-tag {
+    background-color: var(--light-brown);
+    color: var(--primary-brown);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.big-score {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-brown);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.match-info {
+    margin-top: 30px;
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+}
