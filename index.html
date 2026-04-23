@@ -3,39 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sport Selector</title>
+        <title>MatchScore</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="index.css" />
     </head>
+
     <body>
         <header>
             <h1>MatchScore</h1>
             <nav>
                 <a href="index.html">Sports</a>
                 <a href="scores.html">Live Scores</a>
-                <a href="details.html">Details</a>
+                <a href="favorites.html">Favorites</a>
             </nav>
         </header>
 
         <main>
             <h2>Select a Sport</h2>
+
             <div class="sport-grid">
-                <a href="scores.html" class="sport-btn">FOOTBALL</a>
-                <a href="scores.html" class="sport-btn">AFL</a>
-                <a href="scores.html" class="sport-btn">BASEBALL</a>
-                <a href="scores.html" class="sport-btn">BASKETBALL</a>
-                <a href="scores.html" class="sport-btn">FORMULA-1</a>
-                <a href="scores.html" class="sport-btn">HANDBALL</a>
-                <a href="scores.html" class="sport-btn">HOCKEY</a>
-                <a href="scores.html" class="sport-btn">MMA</a>
-                <a href="scores.html" class="sport-btn">NBA</a>
-                <a href="scores.html" class="sport-btn">NFL</a>
-                <a href="scores.html" class="sport-btn">RUGBY</a>
-                <a href="scores.html" class="sport-btn">VOLLEYBALL</a>
+                <button class="sport-btn" data-sport="nfl">NFL</button>
+                <button class="sport-btn" data-sport="nba">NBA</button>
+                <button class="sport-btn" data-sport="mlb">MLB</button>
+                <button class="sport-btn" data-sport="nhl">NHL</button>
+                <button class="sport-btn" data-sport="college-football">
+                    COLLEGE FOOTBALL
+                </button>
             </div>
         </main>
 
         <footer>&copy; MatchScore</footer>
+
+        <script>
+            document.querySelectorAll(".sport-btn").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    localStorage.setItem("sport", btn.dataset.sport);
+                    window.location.href = "scores.html";
+                });
+            });
+        </script>
     </body>
-    <script src="api.js"></script>
 </html>

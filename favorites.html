@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Live Scores</title>
+        <title>Ulubione mecze</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="scores.css" />
     </head>
@@ -12,25 +12,19 @@
         <header>
             <h1>MatchScore</h1>
             <nav>
-                <a href="favorites.html">Favorites</a>
                 <a href="index.html">Sports</a>
+                <a href="scores.html">Live Scores</a>
+                <a href="favorites.html">Favorites</a>
             </nav>
         </header>
 
         <main>
-            <h2>Live Matches</h2>
-            <input type="text" id="search" placeholder="Search team..." />
-
-            <div id="pagination"></div>
-            <div id="error"></div>
-
-            <div class="match-container"></div>
+            <h2>Ulubione mecze</h2>
+            <div class="match-container" id="fav-container"></div>
         </main>
 
         <footer>&copy; MatchScore</footer>
 
-        <script src="js/api.js"></script>
-        <script src="js/scores.js"></script>
         <script src="js/favorites.js"></script>
     </body>
 </html>
