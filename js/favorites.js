@@ -19,8 +19,8 @@ function getTeams(event) {
   const away = comp.competitors?.find((t) => t.homeAway === "away");
 
   return {
-    home: home?.team?.displayName || "Home",
-    away: away?.team?.displayName || "Away",
+    home: home?.team?.displayName || "Gospodarz",
+    away: away?.team?.displayName || "Gość",
     homeScore: home?.score || "0",
     awayScore: away?.score || "0",
   };
@@ -71,7 +71,7 @@ function renderFavorites() {
   );
 
   if (favs.length === 0) {
-    container.innerHTML = "<p>No favorite matches yet</p>";
+    container.innerHTML = "<p>Nie masz jeszcze ulubionych meczów</p>";
     return;
   }
 
@@ -95,7 +95,7 @@ function renderFavorites() {
 
             <div class="match-actions">
                 <button class="fav-btn ${isFav(id) ? "active" : ""}">⭐</button>
-                <button class="details-btn">Details</button>
+                <button class="details-btn">Szczegóły</button>
             </div>
         `;
 

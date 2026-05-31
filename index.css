@@ -9,7 +9,7 @@
     color: var(--primary-brown);
     border: 2px solid var(--secondary-brown);
 
-    height: 100px; /* 🔥 KLUCZ */
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;

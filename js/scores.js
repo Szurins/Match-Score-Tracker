@@ -14,8 +14,8 @@ function getTeams(event) {
   const away = comp.competitors.find((t) => t.homeAway === "away");
 
   return {
-    home: home?.team?.displayName || "Home",
-    away: away?.team?.displayName || "Away",
+    home: home?.team?.displayName || "Gospodarz",
+    away: away?.team?.displayName || "Gość",
     homeScore: home?.score || "0",
     awayScore: away?.score || "0",
   };
@@ -69,7 +69,7 @@ function renderPage() {
 
     <div class="match-actions">
     <button class="fav-btn ${isFav(id) ? "active" : ""}">⭐</button>
-    <button class="details-btn">Details</button>
+    <button class="details-btn">Szczegóły</button>
     </div>
     `;
 
@@ -125,7 +125,7 @@ async function init() {
     filtered = data;
     renderPage();
   } catch (e) {
-    container.innerHTML = "<p>Error loading data</p>";
+    container.innerHTML = "<p>Błąd ładowania danych</p>";
   }
 }
 

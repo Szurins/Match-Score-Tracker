@@ -12,7 +12,7 @@ async function fetchMatches(sport) {
 
   try {
     const res = await fetch(endpoints[sport]);
-    if (!res.ok) throw new Error("API error");
+    if (!res.ok) throw new Error("Błąd API");
 
     const data = await res.json();
     return data.events || [];

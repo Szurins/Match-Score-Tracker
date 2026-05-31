@@ -3,7 +3,7 @@ const container = document.getElementById("details");
 const event = JSON.parse(localStorage.getItem("match"));
 
 if (!event) {
-  container.innerHTML = "No data";
+  container.innerHTML = "Brak danych";
 } else {
   const comp = event.competitions[0];
 
@@ -11,7 +11,7 @@ if (!event) {
   const away = comp.competitors.find((t) => t.homeAway === "away");
 
   function renderStats(team) {
-    if (!team.statistics) return "<p>No stats</p>";
+    if (!team.statistics) return "<p>Brak statystyk</p>";
 
     return team.statistics
       .slice(0, 6)
@@ -52,7 +52,7 @@ ${home.score} - ${away.score}
 
 <p>Status: ${event.status.type.description}</p>
 
-<h3>Stats</h3>
+<h3>Statystyki</h3>
 
 <div class="stats-grid">
 
@@ -68,7 +68,7 @@ ${renderStats(away)}
 
 </div>
 
-<h3>Leaders</h3>
+<h3>Liderzy</h3>
 
 <div class="stats-grid">
 <div>${renderLeaders(home)}</div>
